@@ -1,0 +1,35 @@
+<template name="akardion">
+	<div class="row">
+		<ul class="collapsible col m8 offset-m2" data-collapsible="accordion">
+			<li>
+				<div class="collapsible-header">
+					<div class="row">
+						<div class="col m2" id="vanue">
+							Venues {{count}}
+						</div>
+						{{#if count}}
+						<a class="waves-effect waves-light btn indigo lighten-1 col m2 offset-m8" id="butCsv">
+							Export as CSV
+						</a>
+						{{/if}}
+					</div>
+				</div>
+				<div class="collapsible-body"> 
+					{{#if count}}
+						{{>tableMarkers}}
+					{{/if}}
+				</div>
+			</li>
+			<li>
+				<div class="collapsible-header">
+					<div class="col m2" id="vanue">
+						History {{countHistory}}
+					</div>
+				</div>
+				<div class="collapsible-body">
+					{{>tableHistory}}
+				</div>
+			</li>
+		</ul> 
+	</div>
+</template>

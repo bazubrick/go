@@ -1,0 +1,16 @@
+<template name="tableHistory">
+	<table id="tabl" class="striped ">
+		<tr class="indigo lighten-5">
+			<th>Name</th>
+			<th>Date</th>
+			<th>Delete</th>
+		</tr>
+		{{#each historyUser}}
+		<tr>
+			<td>{{search}}</td>
+			<td>{{submittedText}}</td>
+			<td><i class="material-icons cursDel" id="{{_id}}">not_interested</i></td>	 	   
+		</tr>	
+		{{/each}}
+	</table>  
+</template>

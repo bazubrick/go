@@ -1,0 +1,20 @@
+<template name="tableMarkers">
+	<table id="tabl" class="striped ">
+		<tr class="indigo lighten-5">
+			<th>Name</th>
+			<th>City</th>
+			<th>Address</th>
+			<th>Lat</th>
+			<th>Lng</th>
+		</tr>
+		{{#each markers}}
+		<tr>
+			<td>{{name}}</td>	 
+			<td>{{city}}</td>   
+			<td>{{address}}</td>
+			<td>{{lat}}</td>
+			<td>{{lng}}</td>
+		</tr>	
+		{{/each}}
+	</table>  
+</template>

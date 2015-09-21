@@ -1,0 +1,39 @@
+.map-container { /* задаем ширину карти гугл */
+
+  height: 500px;
+}
+#tabl td{
+ 	border: 1px solid #DDDDDD;
+ }
+#butCsv{
+	margin-top: 3px;
+}
+#vanue{
+	padding-right: 0;
+}
+.input-field input[type=text]:focus + label {
+     color: #5c6bc0;
+     }
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #9fa8da;
+     box-shadow: 0 1px 0 0 #9fa8da;
+}
+nav ul li:hover{
+  background-color: #5C6BC0;
+}
+#login-buttons .login-button{
+  background: #5C6BC0;
+  border: 1px solid #5C6BC0;
+}
+#login-buttons .login-button:hover{
+  background: #5C6BC0;
+  border: 1px solid #5C6BC0;
+}
+.cursDel{
+  cursor: pointer;
+  margin-left: 35%;
+}
+.unreg{
+  color:#90a4ae;
+  font-size: 20px;
+}

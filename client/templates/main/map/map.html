@@ -1,0 +1,14 @@
+<template name="map">
+	{{>form}}
+	<div class="row">
+		<div class="map-container col m8 offset-m2">
+    		{{> googleMap name="msap" options=mapOptions}}
+    	</div>
+	</div>
+	<div class="row">
+		<a class="waves-effect waves-light btn col m8 offset-m2 indigo lighten-1" id="clear">
+			Clear
+		</a>
+	</div>
+	{{>akardion}}
+</template> 

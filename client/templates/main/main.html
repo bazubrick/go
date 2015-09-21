@@ -1,0 +1,17 @@
+<template name="home">
+	<head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- пидключемо иконнки MaterializeCss -->
+  		<title>API Google Maps</title> 
+	</head> 
+	<body>
+		{{>nav}} <!-- вставляем навигацию -->
+
+		{{#unless unr}} <!-- якшо юзер не иснуе то виводимо темплейт -->
+			{{>unreg}}
+		{{/unless}}
+
+		{{#if currentUser}} <!-- якщо юзер иснуе ти виводимо темплейт -->
+			{{> map}}
+		{{/if}}
+	</body> 	
+</template>
